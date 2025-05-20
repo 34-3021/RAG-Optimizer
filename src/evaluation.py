@@ -1,12 +1,6 @@
 import numpy as np
-from services.embedding import EmbeddingService
-
-def content_similarity(benchmark, test):
-    """内容相似度评估（余弦相似度）"""
-    embeds = EmbeddingService.get_embeddings([benchmark, test])
-    vec_a = np.array(embeds.data[0].embedding)
-    vec_b = np.array(embeds.data[1].embedding)
-    return np.dot(vec_a, vec_b) / (np.linalg.norm(vec_a) * np.linalg.norm(vec_b))
+from embedding import cosine_similarity
+from bert_score import score as bert_score
 
 def reference_evaluation(benchmark, test, metric='f1'):
     true_positives = len(set(test) & set(benchmark))
@@ -27,9 +21,26 @@ def reference_evaluation(benchmark, test, metric='f1'):
     else:
         raise ValueError("Invalid metric, choose from: precision/recall/f1")
 
-# Factory function to create evaluator
-def create_evaluator(ref_metric='f1'):
+def bert_score_evaluation(benchmark: str, test: str, lang: str) -> float:
+    _, _, F1 = bert_score(
+        [test], 
+        [benchmark],
+        lang=lang,
+        rescale_with_baseline=True,
+        use_fast_tokenizer=True
+    )
+    return F1.item()
+
+# Factory function to create evaluator using cosine similarity
+def create_evaluator_cosine(ref_metric='f1'):
     return {
-        "content": lambda b, t: content_similarity(b, t) * 10,
-        "reference": lambda b, t: reference_evaluation(b, t, ref_metric) * 10
+        "content": lambda benchmark, text, language: cosine_similarity(benchmark, text) * 10,
+        "reference": lambda benchmark, text, language: reference_evaluation(benchmark, text, ref_metric) * 10
+    }
+
+# Factory function to create evaluator using bert_score
+def create_evaluator_bert_score(lang='en', ref_metric='f1'):
+    return {
+        "content": lambda benchmark, text, language: bert_score_evaluation(benchmark, text, language) * 10,
+        "reference": lambda benchmark, text, language: reference_evaluation(benchmark, text, ref_metric) * 10
     }

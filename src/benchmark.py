@@ -31,7 +31,8 @@ def test_score(algorithm, rag_searcher, evaluator) -> float:
             for indicator in evaluator: # by default: content & reference
                 score[lang][indicator] = evaluator[indicator](
                     benchmark = test_data["A"][0],
-                    test = content
+                    text = content,
+                    language = lang,
                 )
 
         score_list.append(score)
