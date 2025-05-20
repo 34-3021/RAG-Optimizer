@@ -35,12 +35,12 @@ def bert_score_evaluation(benchmark: str, test: str, lang: str) -> float:
 def create_evaluator_cosine(ref_metric='f1'):
     return {
         "content": lambda benchmark, text, language: cosine_similarity(benchmark, text) * 10,
-        "reference": lambda benchmark, text, language: reference_evaluation(benchmark, text, ref_metric) * 10
+        "reference": lambda benchmark, text: reference_evaluation(benchmark, text, ref_metric) * 10
     }
 
 # Factory function to create evaluator using bert_score
 def create_evaluator_bert_score(lang='en', ref_metric='f1'):
     return {
         "content": lambda benchmark, text, language: bert_score_evaluation(benchmark, text, language) * 10,
-        "reference": lambda benchmark, text, language: reference_evaluation(benchmark, text, ref_metric) * 10
+        "reference": lambda benchmark, text: reference_evaluation(benchmark, text, ref_metric) * 10
     }
