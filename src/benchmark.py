@@ -35,7 +35,7 @@ def test_score(algorithm, rag_searcher, evaluator) -> float:
             )
             score[lang]["reference"] = evaluator["reference"](
                 benchmark = test_data["R"][0],
-                text = content
+                text = reference
             )
 
         score_list.append(score)
@@ -44,7 +44,13 @@ def test_score(algorithm, rag_searcher, evaluator) -> float:
 
 
 def parse_indicator(score_list, indicator: str):
-    return {}
+    return [
+        {
+            lang: s[lang][indicator]
+            for lang in s.keys()
+        }
+        for s in score_list
+    ]
 
 def plot_distribution(score_list, output_path="score_distribution.png"):
     chinese_scores = sorted([s['Chinese'] for s in score_list], reverse=True)

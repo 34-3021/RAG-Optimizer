@@ -97,15 +97,13 @@ class PDFRAGSystem:
             query_texts=[query],
             n_results=top_n,
             where=where_filter,
-            include=["documents", "metadatas", "distances"]
+            include=["documents", "metadatas"]
         )
 
         return [{
             "text": doc,
-            "score": 1 - distance,
             "metadata": meta
-        } for doc, distance, meta in zip(
+        } for doc, meta in zip(
             results["documents"][0],
-            results["distances"][0],
             results["metadatas"][0]
         )]
