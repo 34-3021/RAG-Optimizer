@@ -1,4 +1,4 @@
-import fitz  # PyMuPDF
+from PyPDF2 import PdfReader
 import chromadb
 from chromadb.utils.embedding_functions import OpenAIEmbeddingFunction
 from typing import List, Dict, Union
@@ -32,13 +32,13 @@ class PDFRAGSystem:
         self.chunk_size = 512  # 字符数
         self.overlap = 64     # 块间重叠字符数
 
-    def _pdf_loader(self, path: str) -> List[str]:
-        text = []
-        with fitz.open(path) as doc:
-            for page in doc:
-                page_text = page.get_text()
-                clean_text = re.sub(r'\s+', ' ', page_text).strip()
-                text.append(clean_text)
+    def extract_text_from_pdf(file_path: str) -> str:
+        text = ""
+        with open(file_path, 'rb') as f:
+            reader = PdfReader(f)
+            for page in reader.pages:
+                text += page.extract_text() + "\n"
+        text = re.sub(r'\s+', ' ', text).strip()
         return text
 
     def _text_chunker(self, text: str) -> List[str]:
@@ -53,29 +53,23 @@ class PDFRAGSystem:
     def initialize_db(self):
         all_docs = []
         for item in self.pdf_config:
-            pages = self._pdf_loader(item["path"])
+            text = self.extract_text_from_pdf(item["path"])
             
             metadata = {
                 "doc_id": str(item["id"]),
-                "source": item["path"],
-                "pages": len(pages)
+                "source": item["path"]
             }
 
             base_id = hashlib.md5(item["path"].encode()).hexdigest()
             
-            for page_num, page_text in enumerate(pages):
-                chunks = self._text_chunker(page_text)
-                for chunk_idx, chunk in enumerate(chunks):
-                    doc_id = f"{base_id}_p{page_num}_c{chunk_idx}"
-                    all_docs.append({
-                        "id": doc_id,
-                        "text": chunk,
-                        "metadata": {
-                            **metadata,
-                            "page": page_num + 1,
-                            "chunk": chunk_idx + 1
-                        }
-                    })
+            chunks = self._text_chunker(text)
+            for chunk_idx, chunk in enumerate(chunks):
+                doc_id = f"{base_id}_c{chunk_idx}"
+                all_docs.append({
+                    "id": doc_id,
+                    "text": chunk,
+                    "metadata": metadata
+                })
 
         self.collection.add(
             documents=[d["text"] for d in all_docs],
@@ -83,20 +77,10 @@ class PDFRAGSystem:
             ids=[d["id"] for d in all_docs]
         )
 
-    def retrieve(
-        self,
-        query: str,
-        top_n: int = 3,
-        doc_filter: Union[List[int], None] = None
-    ) -> List[Dict]:
-        where_filter = {}
-        if doc_filter:
-            where_filter = {"doc_id": {"$in": [str(i) for i in doc_filter]}}
-
+    def retrieve(self, query: str, top_n: int = 3) -> List[Dict]:
         results = self.collection.query(
             query_texts=[query],
             n_results=top_n,
-            where=where_filter,
             include=["documents", "metadatas"]
         )
 
