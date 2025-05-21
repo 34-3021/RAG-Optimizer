@@ -7,6 +7,7 @@ import hashlib
 import re
 import chromadb
 from chromadb.utils import embedding_functions
+from tqdm import tqdm
 
 class PDFRAGSystem:
     def __init__(self):
@@ -41,19 +42,18 @@ class PDFRAGSystem:
         return text
 
     def _text_chunker(self, text: str) -> List[str]:
-        chunks = []
-        start = 0
-        while start < len(text):
-            end = min(start + self.chunk_size, len(text))
-            chunks.append(text[start:end])
-            start = end - self.overlap
-        return chunks
+        return [
+            text[start: start + self.chunk_size]
+            for start in range(0, len(text), self.chunk_size - self.overlap)
+        ]
 
     def initialize_db(self):
-        all_docs = []
-        for item in self.pdf_config:
-            print(f"Processing {item['path']}")
+
+        for item in tqdm(self.pdf_config):
+            all_docs = []
+            # print(f"Processing {item['path']}")
             text = self.extract_text_from_pdf(item["path"])
+            # print(f"Extracted {len(text)} characters from {item['path']}")
             
             metadata = {
                 "doc_id": str(item["id"]),
@@ -63,6 +63,7 @@ class PDFRAGSystem:
             base_id = hashlib.md5(item["path"].encode()).hexdigest()
             
             chunks = self._text_chunker(text)
+            # print(f"Chunked {len(chunks)} chunks for {item['path']}")
             for chunk_idx, chunk in enumerate(chunks):
                 doc_id = f"{base_id}_c{chunk_idx}"
                 all_docs.append({
@@ -71,11 +72,11 @@ class PDFRAGSystem:
                     "metadata": metadata
                 })
 
-        self.collection.add(
-            documents=[d["text"] for d in all_docs],
-            metadatas=[d["metadata"] for d in all_docs],
-            ids=[d["id"] for d in all_docs]
-        )
+            self.collection.add(
+                documents=[d["text"] for d in all_docs],
+                metadatas=[d["metadata"] for d in all_docs],
+                ids=[d["id"] for d in all_docs]
+            )
 
     def retrieve(self, query: str, top_n: int = 3) -> List[Dict]:
         results = self.collection.query(
