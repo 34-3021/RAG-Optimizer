@@ -3,3 +3,7 @@
 __pycache__/
 *.pyc
 *.whale
+chroma/
+*.db
+*.sqlite
+*.sqlite3

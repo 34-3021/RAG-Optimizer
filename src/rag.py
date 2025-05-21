@@ -11,7 +11,7 @@ from chromadb.utils import embedding_functions
 class PDFRAGSystem:
     def __init__(self):
         
-        self.client = chromadb.PersistentClient(path="../../chroma")
+        self.client = chromadb.PersistentClient(path="chroma")
         self.embedding_func = embedding_functions.OpenAIEmbeddingFunction(
             api_key="API_KEY_IS_NOT_NEEDED",
             api_base="http://10.176.64.152:11435/v1",
@@ -21,18 +21,17 @@ class PDFRAGSystem:
         # 创建/获取集合
         self.collection = self.client.get_or_create_collection(
             name="pdf_rag",
-            embedding_function=self.embedding_fn
+            embedding_function=self.embedding_func
         )
         
-        # 加载PDF配置
-        with open("../dataset/paper.json") as f:
+        with open("dataset/paper.json") as f:
             self.pdf_config = json.load(f)
         
         # 文档分块参数
         self.chunk_size = 512  # 字符数
         self.overlap = 64     # 块间重叠字符数
 
-    def extract_text_from_pdf(file_path: str) -> str:
+    def extract_text_from_pdf(self, file_path: str) -> str:
         text = ""
         with open(file_path, 'rb') as f:
             reader = PdfReader(f)
@@ -53,6 +52,7 @@ class PDFRAGSystem:
     def initialize_db(self):
         all_docs = []
         for item in self.pdf_config:
+            print(f"Processing {item['path']}")
             text = self.extract_text_from_pdf(item["path"])
             
             metadata = {

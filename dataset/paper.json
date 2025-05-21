@@ -1,110 +1,110 @@
 [
     {
         "id": 1,
-        "path": "./paper/1707.06347v2.pdf"
+        "path": "dataset/paper/1707.06347v2.pdf"
     },
     {
         "id": 2,
-        "path": "./paper/1807.03819v3.pdf"
+        "path": "dataset/paper/1807.03819v3.pdf"
     },
     {
         "id": 3,
-        "path": "./paper/1902.03477v2.pdf"
+        "path": "dataset/paper/1902.03477v2.pdf"
     },
     {
         "id": 4,
-        "path": "./paper/1910.03193v3.pdf"
+        "path": "dataset/paper/1910.03193v3.pdf"
     },
     {
         "id": 5,
-        "path": "./paper/2004.00277v1.pdf"
+        "path": "dataset/paper/2004.00277v1.pdf"
     },
     {
         "id": 6,
-        "path": "./paper/2006.11239v2.pdf"
+        "path": "dataset/paper/2006.11239v2.pdf"
     },
     {
         "id": 7,
-        "path": "./paper/2010.13166v2.pdf"
+        "path": "dataset/paper/2010.13166v2.pdf"
     },
     {
         "id": 8,
-        "path": "./paper/2108.08481v6.pdf"
+        "path": "dataset/paper/2108.08481v6.pdf"
     },
     {
         "id": 9,
-        "path": "./paper/2205.12755v6.pdf"
+        "path": "dataset/paper/2205.12755v6.pdf"
     },
     {
         "id": 10,
-        "path": "./paper/2305.13048v2.pdf"
+        "path": "dataset/paper/2305.13048v2.pdf"
     },
     {
         "id": 11,
-        "path": "./paper/2305.18290v3.pdf"
+        "path": "dataset/paper/2305.18290v3.pdf"
     },
     {
         "id": 12,
-        "path": "./paper/2311.16867v2.pdf"
+        "path": "dataset/paper/2311.16867v2.pdf"
     },
     {
         "id": 13,
-        "path": "./paper/2404.05892v4.pdf"
+        "path": "dataset/paper/2404.05892v4.pdf"
     },
     {
         "id": 14,
-        "path": "./paper/2404.07972v2.pdf"
+        "path": "dataset/paper/2404.07972v2.pdf"
     },
     {
         "id": 15,
-        "path": "./paper/2405.17935v3.pdf"
+        "path": "dataset/paper/2405.17935v3.pdf"
     },
     {
         "id": 16,
-        "path": "./paper/2409.19606v3.pdf"
+        "path": "dataset/paper/2409.19606v3.pdf"
     },
     {
         "id": 17,
-        "path": "./paper/2410.05262v1.pdf"
+        "path": "dataset/paper/2410.05262v1.pdf"
     },
     {
         "id": 18,
-        "path": "./paper/2412.19663v1.pdf"
+        "path": "dataset/paper/2412.19663v1.pdf"
     },
     {
         "id": 19,
-        "path": "./paper/2501.12547v1.pdf"
+        "path": "dataset/paper/2501.12547v1.pdf"
     },
     {
         "id": 20,
-        "path": "./paper/2502.02523v3.pdf"
+        "path": "dataset/paper/2502.02523v3.pdf"
     },
     {
         "id": 21,
-        "path": "./paper/2502.06855v2.pdf"
+        "path": "dataset/paper/2502.06855v2.pdf"
     },
     {
         "id": 22,
-        "path": "./paper/2502.09992v2.pdf"
+        "path": "dataset/paper/2502.09992v2.pdf"
     },
     {
         "id": 23,
-        "path": "./paper/2502.11089v1.pdf"
+        "path": "dataset/paper/2502.11089v1.pdf"
     },
     {
         "id": 24,
-        "path": "./paper/2503.05236v1.pdf"
+        "path": "dataset/paper/2503.05236v1.pdf"
     },
     {
         "id": 25,
-        "path": "./paper/2503.15477v1.pdf"
+        "path": "dataset/paper/2503.15477v1.pdf"
     },
     {
         "id": 26,
-        "path": "./paper/2504.01990v1.pdf"
+        "path": "dataset/paper/2504.01990v1.pdf"
     },
     {
         "id": 27,
-        "path": "./paper/2504.07951v2.pdf"
+        "path": "dataset/paper/2504.07951v2.pdf"
     }
 ]

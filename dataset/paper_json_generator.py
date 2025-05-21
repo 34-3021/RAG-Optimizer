@@ -24,7 +24,7 @@ def find_pdfs_in_directory(directory: str) -> List[Dict[str, str]]:
     for root, _, files in os.walk(directory):
         for file in tqdm(files):
             if file.endswith('.pdf'):
-                pdf_files.append({"id": len(pdf_files) + 1, "path": os.path.join(root, file)})
+                pdf_files.append({"id": len(pdf_files) + 1, "path": f"dataset/paper/{file}"})
     return pdf_files
 
 def save_to_json(data: List[Dict[str, str]], output_file: str) -> None:
