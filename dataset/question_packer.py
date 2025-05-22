@@ -87,7 +87,7 @@ def main():
                 "Q": [[question["title"], question["quest"] + "使用中文编写。"], [question["title"], question["quest"] + "使用英文编写。"]],
                 "A": [chinese_content, english_content],
                 "R": [reference, reference]
-            }, f)
+            }, f, ensure_ascii=False, indent=4)
             f.write("\n\n\n")
 
 if __name__ == "__main__":
