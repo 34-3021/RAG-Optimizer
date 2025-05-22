@@ -1,0 +1,16 @@
+[
+    [
+        "中文问题：Transformer模型中的自注意力机制相较于传统RNN和CNN在处理长距离依赖关系时有哪些优势？  ",
+        "中文要求：请从计算复杂度、并行化能力以及信息传递路径长度的角度进行对比分析。  ",
+        "",
+        "英文问题：How does the positional encoding in Transformer models address the issue of sequence order information compared to traditional RNN-based approaches?  ",
+        "英文要求：Explain the design principles of sinusoidal positional encoding and its advantages over learned embeddings, especially in terms of generalization to longer sequences."
+    ],
+    [
+        "中文问题：PPO算法中的“近端策略优化”具体体现在哪些方面？  ",
+        "中文要求：请从目标函数设计、策略更新限制以及与其他策略梯度方法的对比角度来回答。  ",
+        "",
+        "英文问题：What are the key advantages of PPO's clipped surrogate objective compared to traditional policy gradient methods?  ",
+        "英文要求：Please explain in terms of stability, sample efficiency, and implementation simplicity."
+    ]
+]

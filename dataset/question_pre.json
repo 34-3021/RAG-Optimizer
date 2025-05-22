@@ -1,0 +1,18 @@
+[
+    {
+        "title": "\"Transformer模型中的自注意力机制与传统RNN和CNN在长距离依赖关系处理中的对比研究：计算复杂度、并行化能力及信息传递路径长度的分析\"",
+        "quest": "Transformer模型中的自注意力机制相较于传统RNN和CNN在处理长距离依赖关系时有哪些优势？\n请从计算复杂度、并行化能力以及信息传递路径长度的角度进行对比分析。"
+    },
+    {
+        "title": "\"Positional Encoding in Transformer Models: Design Principles, Advantages, and Comparison to RNN-Based Approaches\"",
+        "quest": "How does the positional encoding in Transformer models address the issue of sequence order information compared to traditional RNN-based approaches?\nExplain the design principles of sinusoidal positional encoding and its advantages over learned embeddings, especially in terms of generalization to longer sequences."
+    },
+    {
+        "title": "近端策略优化算法（PPO）的理论基础与实践应用",
+        "quest": "PPO算法中的“近端策略优化”具体体现在哪些方面？\n请从目标函数设计、策略更新限制以及与其他策略梯度方法的对比角度来回答。"
+    },
+    {
+        "title": "\"Advantages of Proximal Policy Optimization's Clipped Surrogate Objective over Traditional Policy Gradient Methods: Stability, Sample Efficiency, and Implementation Simplicity\"",
+        "quest": "What are the key advantages of PPO's clipped surrogate objective compared to traditional policy gradient methods?\nPlease explain in terms of stability, sample efficiency, and implementation simplicity."
+    }
+]
