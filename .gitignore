@@ -7,3 +7,4 @@ chroma/
 *.db
 *.sqlite
 *.sqlite3
+chroma-backup/
