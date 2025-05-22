@@ -2,313 +2,416 @@
     {
         "title": "\"Transformer模型中的自注意力机制与传统RNN和CNN在长距离依赖处理中的对比研究：计算复杂度、并行化能力与信息传递路径长度的分析\"",
         "quest": "Transformer模型中的自注意力机制相较于传统RNN和CNN在处理长距离依赖关系时有哪些优势？\n请从计算复杂度、并行化能力以及信息传递路径长度的角度进行对比分析。"
-    }, {
+    },
+    {
         "title": "\"Enhancing Transformer Performance through Multi-Head Attention: A Comprehensive Analysis of Representation Subspaces, Parallel Computation, and Model Interpretability\"",
         "quest": "How does the multi-head attention mechanism in the Transformer model enhance its performance compared to single-head attention?\nPlease explain from the perspectives of representation subspaces, parallel computation, and model interpretability."
-    }, {
+    },
+    {
         "title": "\"Transformer模型中的自注意力机制与传统RNN和CNN在长距离依赖处理中的对比分析：计算复杂度、并行化能力与信息传递路径长度\"",
         "quest": "Transformer模型中的自注意力机制相较于传统RNN和CNN在处理长距离依赖关系时有哪些优势？\n请从计算复杂度、并行化能力以及信息传递路径长度的角度进行对比分析。"
-    }, {
+    },
+    {
         "title": "\"Positional Encoding Mechanisms in Transformer Models: Sinusoidal vs. Learned Embeddings\"",
         "quest": "How does the positional encoding in the Transformer model address the issue of sequence order information without using recurrence or convolution?\nPlease explain the design rationale of sinusoidal positional encoding and compare its effectiveness with learned positional embeddings based on the paper's findings."
-    }, {
+    },
+    {
         "title": "\"Transformer模型与传统RNN和CNN模型的并行化优势对比：计算复杂度、序列长度依赖性与训练效率分析\"",
         "quest": "Transformer模型相较于传统的RNN和CNN模型在并行化方面有哪些显著优势？\n请从计算复杂度、序列长度依赖性以及训练效率的角度进行对比分析。"
-    }, {
+    },
+    {
         "title": "\"Advances in Transformer Attention Mechanisms: Multi-Head Attention, Positional Encoding, and Recurrence Elimination\"",
         "quest": "What are the key innovations in the Transformer's attention mechanism that enable it to outperform traditional sequence transduction models?\nPlease discuss from the perspectives of multi-head attention, positional encoding, and the elimination of recurrence, providing specific technical details."
-    }, {
+    },
+    {
         "title": "\"Transformer模型中的自注意力机制在长距离依赖问题中的优势与机制综述\"",
         "quest": "Transformer模型中的自注意力机制如何解决长距离依赖问题？\n请从注意力权重分配、并行计算能力以及与传统RNN/CNN的对比角度进行解释。"
-    }, {
+    },
+    {
         "title": "\"Positional Encoding in Transformer Models: Advantages in Handling Variable-Length Sequences, Positional Information, and Computational Efficiency\"",
         "quest": "What are the key advantages of positional encoding in Transformer models compared to traditional sequence modeling approaches?\nPlease discuss from the perspectives of handling variable-length sequences, capturing relative/absolute positions, and computational efficiency."
-    }, {
+    },
+    {
         "title": "\"近端策略优化(PPO)算法中裁剪概率比的机制与效果综述\"",
         "quest": "PPO算法中的“近端策略优化”是如何通过裁剪概率比来避免策略更新过大的？\n请从裁剪概率比的具体操作、数学表达式的作用以及实际训练中的效果三个方面进行解释。"
-    }, {
+    },
+    {
         "title": "\"Proximal Policy Optimization: Objective Function Design, Theoretical Guarantees, and Empirical Performance in Continuous Control Tasks\"",
         "quest": "How does PPO's clipped surrogate objective function ensure stable policy updates compared to traditional policy gradient methods?\nPlease analyze from the perspectives of objective function design, theoretical guarantees (e.g., lower bound property), and empirical performance in continuous control tasks."
-    }, {
+    },
+    {
         "title": "\"Universal Transformer与标准Transformer的模型结构与计算方式对比：并行性、递归机制、动态停止策略及理论计算能力分析\"",
         "quest": "Universal Transformer相较于标准Transformer在模型结构和计算方式上有哪些关键改进？\n请从并行性、递归机制、动态停止策略以及理论计算能力四个方面进行对比分析。"
-    }, {
+    },
+    {
         "title": "\"Advances in Transformer Architectures: Addressing Algorithmic Task Limitations with Universal Transformers\"",
         "quest": "How does the Universal Transformer address the limitations of traditional RNNs and standard Transformers in handling algorithmic tasks?\nDiscuss the model's recurrent inductive bias, parallel processing capabilities, and dynamic halting mechanism, with examples from tasks like string copying or logical inference."
-    }, {
+    },
+    {
         "title": "\"人类与机器学习在Omniglot挑战中的概念学习差异：任务多样性、泛化能力与先验知识利用的对比分析\"",
         "quest": "Omniglot挑战中提到的五种概念学习任务在人类认知和机器学习中的核心差异是什么？\n请从任务多样性、模型泛化能力以及人类先验知识利用的角度进行对比分析。"
-    }, {
+    },
+    {
         "title": "\"Limitations of Current Deep Generative Models in Achieving Human-like Performance on Omniglot Challenge Tasks: Perspectives on Compositionality, Causality, and Data Efficiency\"",
         "quest": "What are the key limitations of current deep generative models in achieving human-like performance on the Omniglot challenge tasks?\nPlease address the issues from the perspectives of compositionality, causality, and data efficiency, with specific examples from the paper."
-    }, {
+    },
+    {
         "title": "\"ALBERT模型参数效率创新设计的综述：嵌入参数分解、跨层参数共享与句子顺序预测损失\"",
         "quest": "ALBERT模型在参数效率方面有哪些创新设计？\n请从嵌入参数分解、跨层参数共享以及句子顺序预测损失三个角度进行回答。"
-    }, {
+    },
+    {
         "title": "\"Efficient Scaling of Pre-trained Language Models: Techniques and Impacts in ALBERT\"",
         "quest": "How does ALBERT's design address the challenges of scaling large pre-trained language models?\nPlease discuss the model's parameter reduction techniques (e.g., factorized embedding, cross-layer sharing) and their impact on training speed and memory usage."
-    }, {
+    },
+    {
         "title": "\"DeepONet在非线性算子学习中的优势：网络结构设计、训练效率、泛化能力与理论支持的综述\"",
         "quest": "DeepONet相较于传统神经网络在解决非线性算子学习问题时的优势是什么？\n请从网络结构设计、训练效率、泛化能力以及理论支持的角度进行回答。"
-    }, {
+    },
+    {
         "title": "Universal Approximation Theorems for Operators: Theoretical Insights, Architectural Implications, and Practical Limitations in DeepONet",
         "quest": "What are the key theoretical insights provided by the universal approximation theorem for operators in the context of DeepONet?\nPlease discuss the implications of the theorem on the architecture design of DeepONet and its practical limitations, such as optimization and generalization errors."
-    }, {
+    },
+    {
         "title": "\"图结构在GSMN模型中提升图像-文本细粒度匹配的机制综述\"",
         "quest": "GSMN模型在图像-文本匹配任务中如何利用图结构来提升细粒度对应关系的学习？\n请从节点级匹配、结构级匹配以及图结构对关系与属性建模的角度进行回答，并解释这些机制如何共同改善匹配性能。"
-    }, {
+    },
+    {
         "title": "\"Heterogeneous Graph Matching in GSMN: Advantages of Explicit Phrase Modeling and Cross-Modal Propagation over Traditional Region-Word Alignment Methods\"",
         "quest": "What are the key advantages of using heterogeneous graph matching (visual and textual graphs) in GSMN compared to traditional region-word alignment methods?\nPlease address the benefits from both explicit phrase modeling (object-relation-attribute) and cross-modal propagation mechanisms, with examples illustrating the improvement over coarse-grained approaches."
-    }, {
+    },
+    {
         "title": "\"Liquid Time-constant Networks与传统RNN模型在时间序列预测中的对比分析：模型结构、动态时间常数机制及稳定性\"",
         "quest": "Liquid Time-constant Networks（LTCs）在时间序列预测任务中相较于传统RNN模型的优势主要体现在哪些方面？\n请从模型结构、动态时间常数机制以及稳定性三个角度进行对比分析。"
-    }, {
+    },
+    {
         "title": "\"Quantitative Analysis of Trajectory Length in Liquid Time-constant Networks: Expressivity Comparisons with Neural ODEs and CT-RNNs through Activation Functions, Weight Variance, and Network Depth\"",
         "quest": "How does the trajectory length measure quantitatively demonstrate the superior expressivity of Liquid Time-constant Networks (LTCs) compared to Neural ODEs and CT-RNNs?\nPlease analyze from the perspectives of activation function choice, weight variance impact, and network depth, supported by theoretical bounds and empirical results."
-    }, {
+    },
+    {
         "title": "扩散概率模型在图像生成中的优势：模型结构、训练效率与样本质量的综合分析及其与GAN和VAE的对比",
         "quest": "扩散概率模型在图像生成中的主要优势是什么？\n请从模型结构、训练效率和样本质量三个方面进行回答，并对比其他生成模型（如GAN或VAE）的特点。"
-    }, {
+    },
+    {
         "title": "\"Comparative Analysis of Diffusion Probabilistic Models and Traditional Denoising Score Matching Methods: Training Objectives, Sampling Processes, and Theoretical Connections to Variational Inference\"",
         "quest": "What are the key differences between diffusion probabilistic models and traditional denoising score matching methods?\nPlease address the aspects of training objectives, sampling process, and theoretical connections to variational inference, while providing specific examples from the paper."
-    }, {
+    },
+    {
         "title": "\"课程学习在机器学习中的优势与适用场景综述：模型性能提升、训练收敛速度与数据噪声处理的视角\"",
         "quest": "课程学习（Curriculum Learning）在机器学习中的主要优势和适用场景是什么？\n请从模型性能提升、训练收敛速度以及数据噪声处理的角度来回答。"
-    }, {
+    },
+    {
         "title": "\"A Comparative Review of Self-Paced Learning and Transfer Teacher Methods in Automatic Curriculum Learning: Methodologies, Strengths, and Weaknesses\"",
         "quest": "What are the key differences between Self-Paced Learning (SPL) and Transfer Teacher methods in automatic Curriculum Learning?\nPlease compare their methodologies, strengths, and weaknesses in terms of difficulty measurement and training flexibility."
-    }, {
+    },
+    {
         "title": "\"Fourier神经算子（FNO）在非周期边界条件下的架构设计、边界处理及数值表现综述\"",
         "quest": "Fourier神经算子（FNO）在非周期边界条件下的表现如何？\n请从FNO的架构设计、边界条件处理方式以及在非周期边界问题中的数值表现角度来回答。"
-    }, {
+    },
+    {
         "title": "Neural Operator Frameworks: Ensuring Discretization Invariance through Architecture Design, Parameter Sharing, and Convergence Properties under Mesh Refinement",
         "quest": "How does the Neural Operator framework ensure discretization invariance across different resolutions?\nPlease explain from the perspectives of architecture design, parameter sharing, and convergence properties under mesh refinement."
-    }, {
+    },
+    {
         "title": "多任务学习中灾难性遗忘问题的进化方法研究综述",
         "quest": "论文中提出的进化方法如何解决多任务学习中的灾难性遗忘问题？\n请从知识隔离机制、参数共享策略和模型更新方式三个角度进行解释。"
-    }, {
+    },
+    {
         "title": "\"Evolutionary Methods for Gradient Interference Immunity in Multitask Learning: Roles of Sparse Activation, Task-Based Routing, and Hyperparameter Tuning\"",
         "quest": "How does the evolutionary method proposed in the paper achieve immunity against gradient interference in multitask learning?\nPlease address the roles of sparse activation, task-based routing, and evolutionary hyperparameter tuning in your answer."
-    }, {
+    },
+    {
         "title": "\"SparseFormer模型中的稀疏特征采样机制及其在模仿人类视觉识别过程中的应用：模型结构、实现方式与计算效率分析\"",
         "quest": "SparseFormer模型如何通过稀疏特征采样来模仿人类的视觉识别过程？\n请从模型结构、稀疏特征采样的具体实现方式以及计算效率的角度来回答。"
-    }, {
+    },
+    {
         "title": "\"Advantages of SparseFormer's Latent Token Representation over Traditional Dense Vision Models: A Comparative Analysis of Computational Efficiency, High-Resolution Scalability, and Cross-Task Adaptability\"",
         "quest": "What are the key advantages of SparseFormer's latent token representation compared to traditional dense vision models?\nPlease discuss from the perspectives of computational cost, scalability to high-resolution inputs, and adaptability to different tasks (e.g., image vs. video)."
-    }, {
+    },
+    {
         "title": "\"多模态语言模型训练策略的对比研究：三阶段与单阶段方法的模态适应性、跨模态知识迁移及计算效率分析\"",
         "quest": "SpeechGPT的三阶段训练策略相较于传统的单阶段训练方法有哪些优势？\n请从模态适应性、跨模态知识迁移、以及计算效率三个角度进行对比分析。"
-    }, {
+    },
+    {
         "title": "\"Advances in SpeechInstruct Dataset Construction: Enhancing Cross-Modal Instruction Following through Data Diversity, Task Coverage, and Discrete Speech Representations\"",
         "quest": "What are the key innovations in SpeechInstruct dataset construction that enable effective cross-modal instruction following?\nPlease address the aspects of data diversity, task coverage, and the integration of discrete speech representations in your response."
-    }, {
+    },
+    {
         "title": "\"RWKV模型：融合Transformer与RNN优势的混合架构及其在并行训练与推理效率上的优化\"",
         "quest": "RWKV模型如何结合了Transformer和RNN的优势，同时克服了它们的局限性？\n请从模型结构、训练并行性和推理效率三个方面进行阐述，并对比传统Transformer和RNN的优缺点。"
-    }, {
+    },
+    {
         "title": "\"Advances in Linear Attention Mechanisms: A Comparative Analysis of RWKV and Traditional Dot-Product Attention in Transformers\"",
         "quest": "What are the key innovations in RWKV's linear attention mechanism compared to traditional dot-product attention in Transformers?\nExplain from the perspectives of computational complexity, memory usage, and the ability to handle long sequences, with specific examples from the paper."
-    }, {
+    },
+    {
         "title": "基于DPO与RLHF方法的训练效率与稳定性对比研究：流程复杂度、资源消耗及超参数敏感性分析",
         "quest": "DPO算法相较于传统RLHF方法在训练效率和稳定性方面的主要优势是什么？\n请从训练流程复杂度、计算资源消耗以及超参数敏感性三个角度进行对比分析。"
-    }, {
+    },
+    {
         "title": "\"Direct Preference Optimization: Theoretical Insights and Algorithmic Advancements in Human Preference Alignment\"",
         "quest": "What are the key theoretical insights that enable DPO to bypass explicit reward modeling while maintaining alignment with human preferences?\nExplain the role of the reparameterization trick (Eq. 5) and the implicit reward-policy duality in the Bradley-Terry framework, highlighting how this avoids reinforcement learning loops."
-    }, {
+    },
+    {
         "title": "\"Falcon模型训练中的硬件资源优化策略：分布式训练、内存优化与计算效率提升\"",
         "quest": "Falcon模型在训练过程中如何优化硬件资源的使用以提高训练效率？\n请从分布式训练策略、内存优化技术和计算效率提升三个方面来回答。"
-    }, {
+    },
+    {
         "title": "\"Architectural Innovations in Falcon Models: Unique Structural Features, Attention Mechanisms, and Training Techniques\"",
         "quest": "What are the key architectural innovations in Falcon models that distinguish them from other large language models?\nPlease focus on the unique aspects of model structure, attention mechanisms, and training techniques."
-    }, {
+    },
+    {
         "title": "大语言模型工具学习安全性评估：基于ToolSword框架的输入、执行与输出三阶段安全场景设计与挑战分析",
         "quest": "ToolSword框架在评估大语言模型工具学习安全性时，如何从输入、执行和输出三个阶段设计不同的安全场景？\n请分别说明每个阶段的核心安全挑战，并举例说明ToolSword如何通过具体场景（如恶意查询、噪声误导等）暴露模型潜在风险。"
-    }, {
+    },
+    {
         "title": "\"Limitations of Current Safety Alignment Mechanisms in LLMs for Tool Learning: A Review of Vulnerabilities, Feedback Dependence, and Model Size Effects\"",
         "quest": "What are the key limitations of current safety alignment mechanisms in LLMs when applied to tool learning, as revealed by ToolSword's experiments?\nDiscuss from three perspectives: 1) Vulnerability to jailbreak attacks in input stage, 2) Over-reliance on tool feedback in output stage, and 3) Impact of model size on safety performance. Provide experimental evidence from the paper."
-    }, {
+    },
+    {
         "title": "\"离散表示在多模态处理中的优势：模态转换、语义保留与模型架构的综述\"",
         "quest": "AnyGPT模型如何通过离散表示实现多模态的统一处理？\n请从模态转换、语义保留和模型架构的角度解释离散表示在多模态处理中的优势。"
-    }, {
+    },
+    {
         "title": "\"Challenges and Solutions in Constructing Large-Scale Multimodal Instruction Datasets: Data Diversity, Modality Alignment, and Synthetic Data Quality\"",
         "quest": "What are the key challenges in constructing large-scale multimodal instruction datasets like AnyInstruct-108k?\nDiscuss the challenges from the perspectives of data diversity, modality alignment, and synthetic data quality, and explain how AnyGPT addresses them."
-    }, {
+    },
+    {
         "title": "\"大型语言模型中语义归纳头的作用机制及其与传统归纳头的比较研究\"",
         "quest": "语义归纳头（semantic induction heads）在大型语言模型中的作用是什么？\n请从语义关系的编码、上下文学习能力的提升以及与传统归纳头的区别三个角度来回答。"
-    }, {
+    },
+    {
         "title": "\"Semantic Induction Heads in Large Language Models: Pattern Discovery, Format Compliance, and Training Stage Correlations\"",
         "quest": "How do semantic induction heads contribute to the in-context learning ability of large language models?\nPlease analyze from the perspectives of pattern discovery, format compliance, and their correlation with training stages."
-    }, {
+    },
+    {
         "title": "\"ClusterClip采样方法在数据聚类、样本平衡策略及防止过拟合剪枝操作中的独特优势综述\"",
         "quest": "ClusterClip采样方法在平衡训练数据分布方面有哪些独特优势？\n请从数据聚类、样本平衡策略以及防止过拟合的剪枝操作三个方面进行回答。"
-    }, {
+    },
+    {
         "title": "\"Comparative Analysis of ClusterClip Sampling and Traditional Random Sampling in Large Language Model Training: Impacts on Performance, Efficiency, and Generalization\"",
         "quest": "What are the key differences between ClusterClip Sampling and traditional random sampling in large language model training?\nPlease compare their impacts on model performance, training efficiency, and generalization ability across diverse tasks."
-    }, {
+    },
+    {
         "title": "\"Data-free Joint Rank-k Approximation for Efficient Compression of Large Language Model Weights: Advantages in Parameter Efficiency, Mapping Space Consistency, and Data-free Calibration\"",
         "quest": "Data-free Joint Rank-k Approximation方法在压缩大型语言模型权重时，相较于传统的矩阵分解方法有哪些独特优势？\n请从参数效率、映射空间一致性、以及无需额外数据校准的角度进行回答。"
-    }, {
+    },
+    {
         "title": "\"Theoretical Foundations of Rank-k Approximation in Model Pruning: Noise Reduction, Spectral Filtering, and Weight Distribution Alignment\"",
         "quest": "How does the denoising hypothesis of Rank-k Approximation theoretically justify potential performance improvements in pruned models?\nExplain from the perspective of noise reduction in weight matrices, spectral domain filtering, and alignment with ideal weight distributions."
-    }, {
+    },
+    {
         "title": "\"Dual Chunk Attention Mechanisms for Efficient Context Window Extension in Large Language Models\"",
         "quest": "Dual Chunk Attention (DCA) 如何在不进行额外训练的情况下扩展大型语言模型的上下文窗口？\n请从DCA的三个核心组件（Intra-Chunk、Inter-Chunk和Successive-Chunk Attention）的设计原理及其协同作用的角度回答，并说明其与Flash Attention的兼容性。"
-    }, {
+    },
+    {
         "title": "\"Comparative Analysis of Dual Chunk Attention (DCA) and Traditional Positional Encoding Methods in Long-Context Sequence Handling\"",
         "quest": "English Question: What are the key advantages of Dual Chunk Attention (DCA) over traditional positional encoding methods like RoPE, PI, and NTK in handling long-context sequences?\nEnglish Requirements: Compare DCA with these methods in terms of extrapolation capability (e.g., PPL stability beyond training length), computational efficiency, and practical performance on tasks like passkey retrieval. Provide specific data from the paper (e.g., 100k+ token support, 94% GPT-3.5-16k performance) to support your answer."
-    }, {
+    },
+    {
         "title": "\"大型语言模型在游戏设计各阶段的应用综述\"",
         "quest": "大型语言模型在游戏设计中的主要应用方向有哪些？\n请从游戏设计的不同阶段（如概念设计、内容生成、玩家交互等）来回答，并举例说明。"
-    }, {
+    },
+    {
         "title": "\"Challenges and Solutions in Utilizing Large Language Models as Non-Player Characters in Games: Technical and Ethical Perspectives\"",
         "quest": "What are the key challenges of using LLMs as non-player characters (NPCs) in games?\nPlease address the challenges from both technical (e.g., memory constraints) and ethical (e.g., bias mitigation) perspectives, and provide potential solutions."
-    }, {
+    },
+    {
         "title": "\"多语言模型训练中数据平衡与性能优化的综述：基于Eagle和Finch模型的案例分析\"",
         "quest": "Eagle和Finch模型在训练过程中如何平衡多语言数据的处理与模型性能的提升？\n请从数据集的构建、模型架构的适应性以及训练策略的角度来回答。"
-    }, {
+    },
+    {
         "title": "\"Architectural Innovations in Eagle and Finch: Matrix-Valued States, Dynamic Recurrence, and Token-Shift Modules for Efficient Inference in Transformer Models\"",
         "quest": "What are the key architectural innovations in Eagle and Finch that enable efficient inference while maintaining competitive performance compared to traditional Transformers?\nPlease discuss the roles of matrix-valued states, dynamic recurrence mechanisms, and token-shift modules in achieving this balance."
-    }, {
+    },
+    {
         "title": "\"Falcon模型训练方法的独特性：基于模型结构、预训练数据选择与后训练优化策略的对比分析\"",
         "quest": "Falcon模型训练方法相较于其他模型的独特性体现在哪些方面？\n请从模型结构、预训练数据选择、后训练优化策略等角度进行对比分析。"
-    }, {
+    },
+    {
         "title": "\"Challenges in Evaluating Multimodal Agents for Real-World Computer Tasks: Insights from the OSW ORLD Benchmark on Task Diversity, Execution-Based Evaluation Complexity, and Environmental Realism\"",
         "quest": "What are the key challenges in evaluating multimodal agents for real-world computer tasks, as highlighted by the OSW ORLD benchmark?\nDiscuss from the perspectives of task diversity, execution-based evaluation complexity, and environmental realism."
-    }, {
+    },
+    {
         "title": "Kolmogorov-Arnold Networks (KANs) 与多层感知机 (MLPs) 的架构设计对比：节点与边功能分配、激活函数可学习性及模型参数类型分析",
         "quest": "Kolmogorov-Arnold Networks (KANs) 相较于多层感知机 (MLPs) 在架构设计上的核心创新点是什么？\n请从节点与边的功能分配、激活函数的可学习性以及模型参数的类型（线性/非线性）三个角度进行对比分析。"
-    }, {
+    },
+    {
         "title": "Theoretical Foundations and Mechanisms of Kolmogorov-Arnold Networks (KANs) in High-Dimensional Function Approximation: Compositional Structure, Univariate Decomposition, and Comparisons with MLPs",
         "quest": "How does the theoretical foundation of KANs, based on the Kolmogorov-Arnold representation theorem, address the curse of dimensionality in high-dimensional function approximation?\nExplain the mechanism from the perspectives of compositional structure exploitation, univariate function decomposition, and compare it with the universal approximation theorem underlying MLPs."
-    }, {
+    },
+    {
         "title": "\"Mamba模型在视觉任务中的适用性评估：任务序列长度、自回归特性与性能对比分析\"",
         "quest": "Mamba模型在视觉任务中的适用性如何评估？\n请从任务序列长度、自回归特性以及模型性能对比的角度进行分析。"
-    }, {
+    },
+    {
         "title": "\"Efficient Long-Sequence Processing and Autoregressive Modeling with Mamba: Key Characteristics and Applications\"",
         "quest": "What are the key characteristics that make Mamba suitable for certain tasks?\nPlease discuss from the perspectives of long-sequence processing and autoregressive requirements, and provide examples of tasks that align with these characteristics."
-    }, {
+    },
+    {
         "title": "\"FALQON与QAOA在组合优化问题中的算法设计、资源消耗及可扩展性对比研究\"",
         "quest": "FALQON算法相较于QAOA在解决组合优化问题时的核心优势是什么？\n请从算法设计、资源消耗（如经典优化需求）以及实际应用中的可扩展性角度进行对比分析。"
-    }, {
+    },
+    {
         "title": "\"Experimental Challenges in Implementing Small-Angle Controlled-Phase Gates with Rydberg Atoms for Quantum Algorithms: Technical and Algorithmic Perspectives\"",
         "quest": "What are the key experimental challenges in implementing small-angle controlled-phase gates with Rydberg atoms for quantum algorithms like FALQON?\nDiscuss the challenges from both technical (e.g., laser stability, spontaneous emission) and algorithmic (e.g., gate fidelity requirements) perspectives."
-    }, {
+    },
+    {
         "title": "\"大型语言模型在复杂任务中的性能提升：工具学习的多角度综述\"",
         "quest": "工具学习如何提升大型语言模型在复杂任务中的表现？\n请从知识获取、专业能力增强、自动化与效率提升以及交互增强四个角度来回答。"
-    }, {
+    },
+    {
         "title": "\"Challenges and Advances in Evaluating Tool Learning Effectiveness with Large Language Models: Metrics, Applicability, and Comparative Analysis\"",
         "quest": "What are the key challenges in evaluating the effectiveness of tool learning with large language models?\nPlease address the issues related to evaluation metrics, real-world applicability, and comparative analysis of different methods."
-    }, {
+    },
+    {
         "title": "\"Hyper-connections在神经网络中的动态权重调整、层间信息整合与理论优势综述\"",
         "quest": "Hyper-connections相较于传统残差连接（如Pre-Norm和Post-Norm）在解决梯度消失和表征崩溃问题上有哪些独特机制？\n请从动态权重调整、层间信息整合方式（如宽度/深度连接）以及理论推导（如矩阵展开形式）的角度分析其优势。"
-    }, {
+    },
+    {
         "title": "\"Dynamic Layer Rearrangement in Neural Networks through Hyper-Connections: Empirical Evidence, Sequential-Parallel Duality, and Visualization of Learned Patterns\"",
         "quest": "How do hyper-connections enable dynamic layer rearrangement during model training, and what empirical evidence supports this capability?\nDiscuss the sequential-parallel duality (e.g., Eqs. 17-19) and provide visualization-based findings (e.g., Fig. 13) to illustrate learned connection patterns."
-    }, {
+    },
+    {
         "title": "\"大型语言模型评估基准的比较研究：数据动态性、评估客观性与背景知识依赖性的视角\"",
         "quest": "TurtleBench相较于其他大型语言模型评估基准的主要优势是什么？\n请从数据动态性、评估客观性和背景知识依赖性三个角度进行回答。"
-    }, {
+    },
+    {
         "title": "\"Comparative Analysis of Reasoning Performance: Claude-3.5-Sonnet vs. OpenAI's o1 Series Models on TurtleBench\"",
         "quest": "What are the key differences in the reasoning performance between Claude-3.5-Sonnet and OpenAI's o1 series models on TurtleBench?\nPlease analyze from the perspectives of reasoning consistency, handling of inductive biases, and token efficiency in latent Chain-of-Thought processes."
-    }, {
+    },
+    {
         "title": "\"大型语言模型强化学习训练中搜索效率与多样性的平衡策略综述\"",
         "quest": "在大型语言模型的强化学习训练中，如何平衡搜索效率与搜索多样性？\n请从搜索策略的设计、计算资源的分配以及模型性能的影响三个方面进行回答。"
-    }, {
+    },
+    {
         "title": "\"Challenges in Designing Generalizable Reward Models for Large Language Models Across Diverse Domains: Addressing Distribution Shift, Reward Granularity, and Data Selection\"",
         "quest": "What are the key challenges in designing a generalizable reward model for large language models across diverse domains?\nPlease address the issues of distribution shift, reward granularity, and data selection in your response."
-    }, {
+    },
+    {
         "title": "\"多模态大语言模型在3D空间定位与方向推断中的增强机制：基于CAD-GPT的空间推理、特征映射与离散化策略研究\"",
         "quest": "CAD-GPT如何通过空间推理增强机制解决传统多模态大语言模型在3D空间定位和方向推断上的不足？\n请从3D建模空间定位机制的设计原理、1D语言特征空间的映射方法以及离散化策略对精度提升的影响三个角度进行回答。"
-    }, {
+    },
+    {
         "title": "\"Advancements in 3D CAD Synthesis: A Comparative Review of Tokenization Approaches in CAD-GPT versus Conventional Latent Vector and Point Cloud Methods\"",
         "quest": "What are the key advantages of CAD-GPT's tokenization approach for representing 3D spatial information compared to conventional latent vector or point cloud methods in CAD synthesis?\nPlease analyze from the perspectives of computational efficiency (e.g., storage cost), editability of generated models, and robustness against cumulative errors in the generation pipeline."
-    }, {
+    },
+    {
         "title": "\"多源动态扩展机制在多领域持续学习中的应用：骨干网络、注意力机制与图权重路由器的协同作用\"",
         "quest": "MSDEM框架如何通过多源动态扩展机制解决多领域持续学习中的领域偏移问题？\n请从多源骨干网络的作用、动态可扩展注意力机制的设计原理以及动态图权重路由器的知识重用策略三个方面进行阐述。"
-    }, {
+    },
+    {
         "title": "\"Dynamic Expandable Attention Mechanisms in Multi-Backbone Knowledge Transfer: Attention Weight Allocation, Backbone Contribution Evaluation, and Mitigation of Catastrophic Forgetting\"",
         "quest": "How does the dynamic expandable attention mechanism (DEAM) in MSDEM selectively transfer knowledge from multiple backbones to enhance new task learning?\nPlease explain from the perspectives of attention weight allocation, backbone contribution evaluation, and its impact on mitigating catastrophic forgetting."
-    }, {
+    },
+    {
         "title": "Agentic RAG与传统RAG系统的动态适应性及多步推理对比研究：基于系统架构、工作流程与实际应用场景的分析",
         "quest": "Agentic RAG与传统RAG系统相比，在动态适应性和多步推理方面有哪些显著优势？\n请从系统架构、工作流程和实际应用场景三个角度进行对比分析，并举例说明。"
-    }, {
+    },
+    {
         "title": "\"Challenges and Solutions in Multi-Agent Collaboration for Agentic RAG Systems: Coordination, Computational Overhead, and Scalability\"",
         "quest": "What are the key challenges in implementing multi-agent collaboration within Agentic RAG systems, and how can they be mitigated?\nDiscuss coordination complexity, computational overhead, and scalability issues, providing potential solutions or frameworks (e.g., AutoGen, CrewAI) to address these challenges."
-    }, {
+    },
+    {
         "title": "\"大语言模型在语言预测任务中形成人类相似概念表征的机制：基于模型结构、训练数据多样性与上下文学习的综合分析\"",
         "quest": "LLM（大语言模型）如何通过语言预测任务形成与人类相似的概念表征？\n请从模型的结构特性、训练数据的多样性以及上下文学习能力的角度分析其概念表征的形成机制。"
-    }, {
+    },
+    {
         "title": "\"Comparative Analysis of LLM-Derived Conceptual Representations and Traditional Static Word Embeddings in Capturing Human-Like Semantic Knowledge: Performance in Behavioral Prediction and Neural Alignment\"",
         "quest": "What are the key differences between LLM-derived conceptual representations and traditional static word embeddings in capturing human-like semantic knowledge?\nPlease compare their performance in predicting human behavioral judgments (e.g., similarity ratings, categorization) and neural alignment, and discuss the limitations of each approach."
-    }, {
+    },
+    {
         "title": "\"Falcon模型在概念表示方面的独特性：基于模型结构、训练数据规模及与LLaMA系列对比的综述\"",
         "quest": "Falcon模型在概念表示方面的独特性体现在哪些方面？\n请从模型结构、训练数据规模以及与其他模型（如LLaMA系列）的对比角度来回答。"
-    }, {
+    },
+    {
         "title": "\"Comparative Analysis of Human-Like Conceptual Representations in Large Language Models and Traditional Static Word Embeddings: Performance in Predicting Human Similarity Judgments, Categorization Accuracy, and Neural Activity Alignment\"",
         "quest": "What are the key differences between human-like conceptual representations in LLMs and traditional static word embeddings?\nPlease compare their performance in predicting human similarity judgments, categorization accuracy, and neural activity alignment, and explain the underlying reasons for these differences."
-    }, {
+    },
+    {
         "title": "\"深度学习模型推理能力提升的技术手段综述：强化学习框架、模型架构优化与训练数据特点的视角及其与传统监督学习的对比\"",
         "quest": "DeepSeek R1模型在推理能力上的提升主要依赖于哪些技术手段？\n请从强化学习框架、模型架构优化以及训练数据特点等角度进行阐述，并对比传统监督学习的差异。"
-    }, {
+    },
+    {
         "title": "\"Cost-Efficient AI Models in China: Architectural Innovations, Engineering Optimizations, and Policy-Driven Resource Constraints\"",
         "quest": "What are the key factors that enable Chinese AI models (e.g. DeepSeek R1, Doubao) to achieve cost-efficiency while maintaining competitive performance?\nAnalyze from perspectives of architectural innovations (e.g. MoE), engineering optimizations, and policy-driven resource constraints, with specific examples from the paper."
-    }, {
+    },
+    {
         "title": "\"自我监督提示优化框架SPO的原理、机制与优势综述\"",
         "quest": "SPO框架如何在不依赖外部参考的情况下实现自我监督的提示优化？\n请从输出比较、评估机制和优化信号生成的角度解释SPO的工作原理，并说明其与传统依赖外部参考的方法相比的优势。"
-    }, {
+    },
+    {
         "title": "\"Advantages of SPO's Pairwise Output Comparison Approach in Prompt Optimization: Cost Efficiency, Applicability to Open-Ended Tasks, and Reduction of Human Annotation Dependency\"",
         "quest": "What are the key advantages of SPO's pairwise output comparison approach over ground truth-based evaluation methods in prompt optimization?\nDiscuss the benefits from three perspectives: cost efficiency, applicability to open-ended tasks, and reduction of human annotation dependency. Provide concrete examples from the paper to support your analysis."
-    }, {
+    },
+    {
         "title": "\"Multi-Head Latent Attention vs. Group Query Attention: Theoretical Advantages in Model Expressiveness via KV Cache Mechanisms, Parameter Decomposition, and Orthogonality Constraints with TransMLA Implementation\"",
         "quest": "Multi-Head Latent Attention (MLA) 相较于 Group Query Attention (GQA) 在模型表达能力上有哪些理论优势？\n请从KV缓存机制、参数分解方式以及正交性约束的角度分析，并说明这些优势如何通过TransMLA方法实现迁移。"
-    }, {
+    },
+    {
         "title": "\"Comparative Analysis of Low-Rank Decomposition in Multi-Head Latent Attention (MLA) and Traditional Attention Compression Methods: Computational Efficiency, Memory Footprint, and Attention Diversity\"",
         "quest": "How does the low-rank decomposition design in MLA fundamentally differ from traditional attention compression methods like GQA or MQA?\nExplain from the perspectives of computational efficiency, memory footprint reduction, and the preservation of attention diversity, with specific examples from the paper's experimental results."
-    }, {
+    },
+    {
         "title": "\"基于扩散模型的LLaDA框架：克服自回归模型单向依赖性的结构、训练与推理策略研究\"",
         "quest": "LLaDA模型在训练过程中如何解决传统自回归模型在反向推理任务中的局限性？\n请从模型结构、训练目标以及推理策略的角度分析LLaDA如何通过扩散模型框架克服自回归模型的单向依赖性，并举例说明其在反向诗歌补全任务中的表现。"
-    }, {
+    },
+    {
         "title": "\"Comparative Analysis of Training Paradigms: Scalability and Computational Efficiency in LLaDA versus Traditional Autoregressive Models\"",
         "quest": "How does LLaDA's training paradigm differ from traditional autoregressive models in terms of scalability and computational efficiency?\nCompare the computational resources (e.g., FLOPs, GPU hours) and scalability trends between LLaDA and ARMs based on the paper's experiments, and explain how LLaDA's diffusion-based approach enables competitive performance despite its non-autoregressive nature."
-    }, {
+    },
+    {
         "title": "\"动态分层稀疏策略在NSA模型中的设计与实现：粗粒度压缩、细粒度选择与滑动窗口机制的协同优化\"",
         "quest": "NSA模型如何通过动态分层稀疏策略在保持全局上下文感知的同时提高计算效率？\n请从粗粒度令牌压缩、细粒度令牌选择和滑动窗口机制的角度解释其设计原理，并说明这些组件如何协同工作以实现高效的长上下文建模。"
-    }, {
+    },
+    {
         "title": "\"Hardware-Aligned Optimizations in Neural Sequence Attention: Principles and Techniques for Enhanced Training and Inference Efficiency\"",
         "quest": "What are the key hardware-aligned optimizations in NSA that enable significant speedups during both training and inference?\nPlease discuss the design principles from the perspectives of arithmetic intensity balancing, memory access patterns, and Tensor Core utilization, and explain how these optimizations address the bottlenecks in traditional attention mechanisms."
-    }, {
+    },
+    {
         "title": "FastMCTS与传统拒绝采样方法在数据合成效率上的对比分析：生成正确推理路径的数量、有效令牌比例及问题解决率",
         "quest": "FastMCTS相较于传统的拒绝采样方法在数据合成效率上有哪些显著优势？\n请从生成正确推理路径的数量、有效令牌比例以及问题解决率三个角度进行对比分析。"
-    }, {
+    },
+    {
         "title": "\"FastMCTS: Adaptive Sampling Strategies for Balanced Exploration in Problems with Varying Difficulty Levels\"",
         "quest": "How does FastMCTS address the challenge of balanced sampling across problems with varying difficulty levels?\nExplain the mechanism (e.g., Adaptive Stay Policy, Dynamic Exploration) and provide empirical evidence from the paper (e.g., Figure 4 results)."
-    }, {
+    },
+    {
         "title": "\"AutoLogi方法在逻辑谜题生成中的多样性与难度控制机制研究：基于背景信息提取、约束条件设计与数据增强策略的综合分析\"",
         "quest": "AutoLogi方法在生成逻辑谜题时如何确保问题的多样性和难度可控性？\n请从背景信息提取、约束条件设计、数据增强策略（如扩展与缩减）的角度分析，并说明这些设计如何共同提升评估的可靠性。"
-    }, {
+    },
+    {
         "title": "\"Advantages of Program-Based Verification in AutoLogi: Mitigating Random Guessing, Handling Multiple Valid Solutions, and Enhancing Computational Efficiency in Large-Scale Evaluation\"",
         "quest": "What are the key advantages of using program-based verification in AutoLogi compared to traditional evaluation methods like multiple-choice questions?\nPlease discuss from three aspects: mitigation of random guessing, handling of multiple valid solutions, and computational efficiency in large-scale evaluation."
-    }, {
+    },
+    {
         "title": "RoPE位置编码在长上下文语言模型中的数学特性、维度划分与长度外推能力研究",
         "quest": "RoPE位置编码在长上下文LLM中的周期性和单调性如何影响模型的长度外推能力？\n请从RoPE的数学特性、维度划分（临界维度前后）以及实际训练中的表现（如弱外推与强外推的区别）三个方面展开分析。"
-    }, {
+    },
+    {
         "title": "\"Memory Management Strategies in Long-Context Large Language Models: A Comparative Analysis of Cache-Based and Text-Based Approaches with Focus on KV Cache Optimization and Retrieval-Augmented Generation\"",
         "quest": "How do cache-based and text-based memory management strategies differ in addressing the challenges of long-context LLMs?\nCompare their advantages and limitations in terms of flexibility, interpretability, and computational overhead, with specific examples from KV cache optimization (§3) and RAG (§4.2.1)."
-    }, {
+    },
+    {
         "title": "\"UNIFIED REWARD模型的多模态联合学习机制：结构设计、任务协同与实验验证\"",
         "quest": "UNIFIED REWARD模型如何通过联合学习多模态任务实现性能提升？\n请从模型结构设计、多任务协同机制以及实验验证效果三个方面进行阐述。"
-    }, {
+    },
+    {
         "title": "\"Advantages of UNIFIED REWARD's Pipeline for Preference Data Construction: A Comparative Analysis of Data Diversity, Evaluation Granularity, and Cross-Task Generalization\"",
         "quest": "What are the key advantages of UNIFIED REWARD's pipeline for preference data construction compared to task-specific reward models?\nExplain from the perspectives of data diversity, evaluation granularity (pairwise ranking vs. pointwise scoring), and cross-task generalization, supported by empirical results from the paper."
-    }, {
+    },
+    {
         "title": "\"Dynamic Tanh (DyT) 与归一化层的非线性映射对比分析：数学定义、学习机制及相似性研究\"",
         "quest": "Dynamic Tanh (DyT) 如何在不计算激活统计量的情况下模拟归一化层的行为？\n请从DyT的数学定义、学习机制（如可学习参数α的作用）以及与归一化层（如Layer Norm）的非线性映射相似性角度进行对比分析。"
-    }, {
+    },
+    {
         "title": "Dynamic Normalization Techniques in Deep Learning: Computational Efficiency and Training Stability Compared to Traditional Methods",
         "quest": "What are the key advantages of DyT over traditional normalization layers in terms of computational efficiency and training stability?\nCompare the computational overhead (e.g., inference/training latency) and stability mechanisms (e.g., gradient flow control) between DyT and Layer Norm/RMSNorm, supported by empirical evidence from the paper."
-    }, {
+    },
+    {
         "title": "\"强化学习从人类反馈中奖励模型准确性与优化效率的关系：基于奖励方差、优化目标平坦性与训练速度的综述\"",
         "quest": "在强化学习从人类反馈（RLHF）中，奖励模型的准确性与其优化效率之间的关系是什么？\n请从奖励方差、优化目标平坦性以及训练速度的角度来回答。"
-    }, {
+    },
+    {
         "title": "\"Interplay Between Reward Variance and Accuracy in RLHF: Optimization Landscape, Policy Gradient Efficiency, and Empirical Observations\"",
         "quest": "How does the interplay between reward variance and accuracy affect the effectiveness of a reward model in RLHF?\nPlease analyze from the perspectives of optimization landscape, policy gradient efficiency, and empirical observations in the experiments."
     }

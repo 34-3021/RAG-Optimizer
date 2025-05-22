@@ -10,9 +10,9 @@ from chromadb.utils import embedding_functions
 from tqdm import tqdm
 
 class PDFRAGSystem:
-    def __init__(self):
+    def __init__(self, path="chroma"):
         
-        self.client = chromadb.PersistentClient(path="chroma")
+        self.client = chromadb.PersistentClient(path=path)
         self.embedding_func = embedding_functions.OpenAIEmbeddingFunction(
             api_key="API_KEY_IS_NOT_NEEDED",
             api_base="http://10.176.64.152:11435/v1",
@@ -24,9 +24,6 @@ class PDFRAGSystem:
             name="pdf_rag",
             embedding_function=self.embedding_func
         )
-        
-        with open("dataset/paper.json") as f:
-            self.pdf_config = json.load(f)
         
         # 文档分块参数
         self.chunk_size = 512  # 字符数
@@ -48,6 +45,8 @@ class PDFRAGSystem:
         ]
 
     def initialize_db(self):
+        with open("dataset/paper.json") as f:
+            self.pdf_config = json.load(f)
 
         for item in tqdm(self.pdf_config):
             all_docs = []
@@ -82,8 +81,8 @@ class PDFRAGSystem:
         results = self.collection.query(
             query_texts=[query],
             n_results=top_n,
-            include=["documents", "metadatas"]
         )
+        # print(results)
 
         return [{
             "text": doc,
