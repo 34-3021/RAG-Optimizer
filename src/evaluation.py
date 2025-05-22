@@ -9,6 +9,9 @@ def reference_evaluation(benchmark, test, metric='f1'):
     
     precision = true_positives / pred_count if pred_count > 0 else 0.0
     recall = true_positives / true_count if true_count > 0 else 0.0
+
+    print("precision:", precision)
+    print("recall:", recall)
     
     if metric == 'precision':
         return precision
@@ -22,25 +25,21 @@ def reference_evaluation(benchmark, test, metric='f1'):
         raise ValueError("Invalid metric, choose from: precision/recall/f1")
 
 def bert_score_evaluation(benchmark: str, test: str, lang: str) -> float:
-    _, _, F1 = bert_score(
-        [test], 
-        [benchmark],
-        lang=lang,
-        rescale_with_baseline=True,
-        use_fast_tokenizer=True
-    )
+    # print(benchmark, test, lang)
+    _, _, F1 = bert_score([test], [benchmark], lang=lang)
     return F1.item()
 
 # Factory function to create evaluator using cosine similarity
-def create_evaluator_cosine(ref_metric='f1'):
-    return {
-        "content": lambda benchmark, text, language: cosine_similarity(benchmark, text) * 10,
-        "reference": lambda benchmark, text: reference_evaluation(benchmark, text, ref_metric) * 10
-    }
+# [deprecated]
+# def create_evaluator_cosine(ref_metric='f1'):
+#     return {
+#         "content": lambda benchmark, text, language: cosine_similarity(benchmark, text),
+#         "reference": lambda benchmark, text: reference_evaluation(benchmark, text, ref_metric)
+#     }
 
 # Factory function to create evaluator using bert_score
 def create_evaluator_bert_score(lang='en', ref_metric='f1'):
     return {
-        "content": lambda benchmark, text, language: bert_score_evaluation(benchmark, text, language) * 10,
-        "reference": lambda benchmark, text: reference_evaluation(benchmark, text, ref_metric) * 10
+        "content": lambda benchmark, text, language: bert_score_evaluation(benchmark, text, language),
+        "reference": lambda benchmark, text: reference_evaluation(benchmark, text, ref_metric)
     }

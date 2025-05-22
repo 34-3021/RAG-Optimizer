@@ -8,12 +8,12 @@ import pickle
 
 def main():
     rag = PDFRAGSystem()
-    rag.initialize_db()
+    # rag.initialize_db()
 
     score = test_score(
         algorithm = algorithm_base,
         rag_searcher = rag,
-        evaluator = create_evaluator_bert_score
+        evaluator = create_evaluator_bert_score()
     )
 
     with open("result.json", "w") as f:

@@ -8,3 +8,5 @@ chroma/
 *.sqlite
 *.sqlite3
 chroma-backup/
+*.txt
+script/

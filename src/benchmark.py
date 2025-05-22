@@ -3,16 +3,18 @@ import json
 from matplotlib import pyplot as plt
 import numpy as np
 from scipy.stats import norm
+from tqdm import tqdm
+import random
 
 def test_score(algorithm, rag_searcher, evaluator) -> float:
     # load dataset from dataset/question.json
-    with open("dataset/question.json") as f:
+    with open("dataset/question.json", encoding="utf-8") as f:
         dataset = json.load(f)
     
     language = ["Chinese", "English"]
     score_list = []
     # dataset.flatten(2)
-    for test_data in dataset:
+    for test_data in tqdm(random.sample(dataset, 20)):
         question_title = test_data["Q"][0][0]
         question_quest = test_data["Q"][0][1]
 
@@ -31,7 +33,7 @@ def test_score(algorithm, rag_searcher, evaluator) -> float:
             score[lang]["content"] = evaluator["content"](
                 benchmark = test_data["A"][0],
                 text = content,
-                language = lang
+                language = lang == "Chinese" and "zh" or "en"
             )
             score[lang]["reference"] = evaluator["reference"](
                 benchmark = test_data["R"][0],
@@ -39,6 +41,7 @@ def test_score(algorithm, rag_searcher, evaluator) -> float:
             )
 
         score_list.append(score)
+        print(score)
     
     return score_list
 
