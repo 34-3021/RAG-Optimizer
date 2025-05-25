@@ -8,6 +8,8 @@
 
 
 
+PostScript：1-4 的内容和演示的时候一样，如果想看差异部分可以直接跳转到第 5 节。
+
 ## 1. 构建数据集
 
 最终结果：找了 51 篇论文，生成了 204 条问答数据。
@@ -98,3 +100,24 @@ graph TD
 综述写作助手（前后端）：https://github.com/34-3021/Overview-Writer
 
 算法优化部分：https://github.com/34-3021/RAG-Optimizer
+
+## 5. 验收后做的修改
+
+### 5.0 验收时的展示
+
+![](test.png)
+
+### 5.1 开源了两个仓库
+
+综述写作助手（前后端）：https://github.com/34-3021/Overview-Writer
+
+算法优化部分：https://github.com/34-3021/RAG-Optimizer
+
+### 5.2 将算法部分植入算法部分
+
+生成内容时自动生成引用，同时在导出的时候自动从文本中提取出引用部分，并生成 references.bib 引用文件。
+
+![](frontend.png)
+
+
+

@@ -10,3 +10,5 @@ chroma/
 chroma-backup/
 *.txt
 script/
+*.doc
+*.docx
